@@ -12,7 +12,7 @@ be: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34].
 
 ## Setup
 - install jest
-  - `yarn add --dev jest`
+  - `yarn`
 
 - run the test suite
   - `yarn test`
