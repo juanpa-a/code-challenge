@@ -1,6 +1,6 @@
 # Code Challenge:
 
-Write a function in any Javascript that calculates the Fibonacci sequence 
+Write a function in javascript that calculates the Fibonacci sequence 
 up to a given number n and returns the sequence as a list.
 
 The Fibonacci sequence is defined as follows:
