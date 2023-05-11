@@ -5,13 +5,26 @@ test("Computes fibonacci set", () => {
     expect(result.splice(0, 50)).toEqual(fibonacciSet);
 });
 
-test(`call fibonacci function with a string`, () => {
+test("Computed set has 1000 elements", () => {
+    const result = fibonacci(0, 1);
+    expect(result.length).toBe(1000);
+});
+
+test(`Throws error when called with a string`, () => {
     expect(() => fibonacci("not a number", 1)).toThrow(
         "Invalid numbers, please try again"
     );
 });
 
-test(`call fibonacci function with an object`, () => {
+test(`Throws error when called with an object`, () => {
+    expect(() => fibonacci(1, {})).toThrow("Invalid numbers, please try again");
+});
+
+test(`Throws error when called with a negative number`, () => {
+    expect(() => fibonacci(1, -1)).toThrow("Invalid numbers, please try again");
+});
+
+test(`Throws error when called with a number greater than 50`, () => {
     expect(() => fibonacci(1, {})).toThrow("Invalid numbers, please try again");
 });
 
